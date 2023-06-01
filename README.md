@@ -1,16 +1,17 @@
-# Sample Hardhat Project
+# Decentralised Application
+This project utilizes the power of blockchain technology to create a transparent and tamper-proof system for logging the details of users who have generously donated to our smart contract. Whether it's real Ether (ETH) or test Ether (like Goerli Eth).
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+Here's how it works:
 
-Try running some of the following tasks:
+* You need to have metamask wallet installed in your browser.
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
-```
+* Then register your wallet address on this app to get started.
 
-website link: https://fundraiserdapp.netlify.app/
-# FundRaiser-Dapp
+* Contribute Ether to this app securely and effortlessly.
+
+* Every donation, along with the user's wallet address, is immutably recorded on the blockchain, ensuring transparency and accountability.
+
+## Website link
+https://fundraiserdapp.netlify.app/
+
+## Screenshots
