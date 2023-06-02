@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import logo from "./assets/logo.png";
 import metamask from "./assets/MetaMask_Fox.svg.png";
 
