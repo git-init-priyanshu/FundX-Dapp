@@ -15,3 +15,6 @@ Here's how it works:
 https://fundraiserdapp.netlify.app/
 
 ## Screenshots
+![image](https://github.com/git-init-priyanshu/FundRaiser-Dapp/assets/110045644/6cc718ac-e6ee-4bf0-b5d7-55b0ce7af016)
+![image](https://github.com/git-init-priyanshu/FundRaiser-Dapp/assets/110045644/486680a7-0734-45d9-b107-1f57a368fe3f)
+
