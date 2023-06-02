@@ -15,44 +15,37 @@ export default function Memos(props) {
 
   return (
     <>
-    <p className="text-center fs-3 fw-medium">Memo</p>
-    {/* {memos.map((memo)=>{
-      return(
-        <table key={memos.indexOf(memo)}>
-          <tbody>
+      <p className="relative text-center text-transparent bg-clip-text bg-gradient-to-r from-neutral-100 to-neutral-600 mt-10 sm: text-5xl lg:text-6xl my-6 ">
+        Memo
+      </p>
+      <div className=" overflow-x-scroll bg-neutral-900 bg-opacity-40 sm:rounded-sm sm:overflow-x-scroll lg:rounded-lg lg:overflow-hidden">
+        <table className="table w-full sm:table-auto">
+          <thead className="justify-between text-left">
             <tr>
-              <td>{memos.indexOf(memo)+1}</td>
-              <td>{memo.name}</td>
-              <td>{memo.message}</td>
-              <td>{memo.from}</td>
-              <td>{String(memo.timestamp)}</td>
+              <th className="px-4 py-2 w-5/12">S no.</th>
+              <th className="px-4 py-2 w-5/12">Name</th>
+              <th className="px-4 py-2 w-5/12">Message</th>
+              <th className="px-4 py-2 w-5/12">Address</th>
+              <th className="px-4 py-2 w-5/12">Date, Time</th>
             </tr>
+          </thead>
+          <tbody>
+            {memos.map((memo, index) => (
+              <tr key={memo.timestamp} className="text-left">
+                <td className="px-4 py-2 w-5/12">{index + 1}</td>
+                <td className="px-4 py-2 w-5/12">{memo.name}</td>
+                <td className="px-4 py-2 w-5/12">{memo.message}</td>
+                <td className="px-4 py-2 w-5/12 overflow-hidden">
+                  {memo.from}
+                </td>
+                <td className="px-4 py-2 w-5/12">
+                  {new Date(memo.timestamp * 1000).toLocaleString()}
+                </td>
+              </tr>
+            ))}
           </tbody>
         </table>
-      )
-    })} */}
-    <table className="table table-primary">
-      <tbody>
-        <tr>
-          <td className="fw-medium">Serial No.</td>
-          <td className="fw-medium">Name</td>
-          <td className="fw-medium">Message</td>
-          <td className="fw-medium">Address</td>
-          <td className="fw-medium">Date,Time</td>
-        </tr>
-        {memos.map((memo)=>{
-          return(
-            <tr key={memos.timestamp}>
-              <td className="fw-medium">{memos.indexOf(memo)+1}</td>
-              <td>{memo.name}</td>
-              <td>{memo.message}</td>
-              <td>{memo.from}</td>
-              <td>{new Date(memo.timestamp * 1000).toLocaleString()}</td>
-            </tr>
-          )
-        })}
-      </tbody>
-    </table>
+      </div>
     </>
   );
 }

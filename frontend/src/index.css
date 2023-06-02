@@ -1,13 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background-color: black;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.circle1 {
+  z-index: -1;
+  width: 500px;
+  height: 500px;
+  background-color: #fe7f2d;
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(200px);
+
+  top: -100px;
+  left: -400px;
+}
+.circle2 {
+  z-index: -1;
+  width: 500px;
+  height: 500px;
+  background-color: #00a8e8;
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(250px);
+
+  top: 200px;
+  right: -200px;
+}
+@media (max-width: 640px) {
+  .circle1 {
+    top: -150px;
+    left: -420px;
+  }
+  .circle2 {
+    top: 550px;
+    right: -300px;
+  }
+}
+
+.logo {
+  font-family: "Shadows Into Light", cursive;
 }

@@ -6,6 +6,7 @@ import Donate from "./MyComponents/Donate";
 import Memos from "./MyComponents/Memos";
 
 import "./App.css";
+import Navbar from "./MyComponents/Navbar";
 
 function App() {
   const [state, setState] = useState({
@@ -57,8 +58,13 @@ function App() {
   }, []);
 
   return (
-    <div className="container">
-      <p className="text-center my-2">{`Connected Account: ${account?account:"No account connected"}`}</p>
+    <div className=" sm: mx-10 lg:mx-16 my-2 ">
+      <Navbar />
+      <div className=" my-auto w-full bg-neutral-800 bg-opacity-60 rounded h-14 p-2 px-5 flex items-center justify-center">
+        <p className=" font-thin  sm:text-sm text-center lg:text-xl font-roboto ">{`Connected Account : ${
+          account ? account : "No account connected"
+        }`}</p>
+      </div>
       <Donate state={state} />
       <Memos state={state} />
     </div>
