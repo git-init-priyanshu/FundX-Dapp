@@ -19,7 +19,7 @@ export default function Memos(props) {
         Memo
       </p>
       <div className=" overflow-x-scroll bg-neutral-900 bg-opacity-40 sm:rounded-sm sm:overflow-x-scroll lg:rounded-lg lg:overflow-hidden">
-        <table className="table w-full sm:table-auto">
+        <table className="table w-full sm:table-auto  text-neutral-300">
           <thead className="justify-between text-left">
             <tr>
               <th className="px-4 py-2 w-5/12">S no.</th>

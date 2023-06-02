@@ -37,7 +37,7 @@ export default function Donate(props) {
           Send Eth
         </div>
         <div className="w-auto sm: mb-3">
-          <label className="block">Name</label>
+          <label className="block text-neutral-300">Name</label>
           <input
             type="text"
             className="block w-full rounded-sm bg-neutral-800 border-0 outline-none text-gray-900 sm: p-1.5"
@@ -46,7 +46,7 @@ export default function Donate(props) {
           />
         </div>
         <div className="mb-3">
-          <label className="block">Amount</label>
+          <label className="block text-neutral-300">Amount</label>
           <input
             type="text"
             className="block w-full rounded-sm bg-neutral-800 border-0 outline-none text-gray-900 sm: p-1.5"
@@ -55,7 +55,7 @@ export default function Donate(props) {
           />
         </div>
         <div className="mb-3">
-          <label className="block">Message</label>
+          <label className="block text-neutral-300">Message</label>
           <input
             type="text"
             className="block w-full rounded-sm bg-neutral-800 border-0 outline-none text-gray-900 sm: p-1.5"
@@ -65,11 +65,15 @@ export default function Donate(props) {
         </div>
         <button
           type="submit"
-          className="flex bg-blue-900 hover:bg-blue-950 sm: w-32 p-1 rounded-sm items-center"
+          className="flex disabled:opacity-80 bg-blue-900 hover:bg-blue-950 sm: w-32 p-1 rounded-sm items-center"
           onClick={() => Donatefun()}
           disabled={!props.state.contract}
         >
-          <img src={ethlogo} alt="eth icon" className=" w-8 mr-2" />
+          <img
+            src={ethlogo}
+            alt="eth icon"
+            className=" w-8 mr-2  text-neutral-300"
+          />
           Send Eth
         </button>
       </form>
