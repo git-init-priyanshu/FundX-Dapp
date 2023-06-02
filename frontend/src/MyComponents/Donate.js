@@ -19,7 +19,7 @@ export default function Donate(props) {
 
   return (
     <div className=" w-full flex flex-wrap lg:items-center flex-row mt-12">
-      <div className="flex sm: my-6 flex-col lg:w-1/2 pr-10">
+      <div className="flex sm:my-6 flex-col lg:w-1/2 pr-10">
         <h1 className="relative text-transparent bg-clip-text bg-gradient-to-r from-neutral-100 to-neutral-600 sm: text-5xl lg:text-6xl my-6 ">
           Fueling Dreams, Empowering Innovators
         </h1>
@@ -30,7 +30,7 @@ export default function Donate(props) {
         </p>
       </div>
       <form
-        className=" bg-neutral-900 bg-opacity-40 rounded sm: w-full p-5 lg:w-1/2"
+        className=" bg-neutral-900 bg-opacity-40 rounded sm: w-full p-5 mt-10 lg:w-1/2"
         onSubmit={() => Donatefun()}
       >
         <div className="relative text-transparent bg-clip-text bg-gradient-to-r from-neutral-100 to-neutral-900 sm: text-4xl mb-5">

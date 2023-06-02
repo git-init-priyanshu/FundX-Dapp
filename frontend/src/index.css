@@ -16,7 +16,7 @@ body {
   background-color: black;
   color: white;
   font-family: "Roboto", sans-serif;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 code {
@@ -47,6 +47,16 @@ code {
 
   top: 200px;
   right: -200px;
+}
+@media (max-width: 640px) {
+  .circle1 {
+    top: -150px;
+    left: -420px;
+  }
+  .circle2 {
+    top: 550px;
+    right: -300px;
+  }
 }
 
 .logo {
