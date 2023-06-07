@@ -18,7 +18,7 @@ export default function Memos(props) {
       <p className="relative text-center text-transparent bg-clip-text bg-gradient-to-r from-neutral-100 to-neutral-600 mt-10 sm: text-5xl lg:text-6xl my-6 ">
         Memo
       </p>
-      <div className=" overflow-x-scroll bg-neutral-900 bg-opacity-40 sm:rounded-sm sm:overflow-x-scroll lg:rounded-lg lg:overflow-hidden">
+      <div className="memo overflow-x-scroll bg-neutral-900 bg-opacity-40 sm:rounded-sm sm:overflow-x-scroll lg:rounded-lg lg:overflow-hidden">
         <table className="table w-full sm:table-auto  text-neutral-300">
           <thead className="justify-between text-left">
             <tr>
