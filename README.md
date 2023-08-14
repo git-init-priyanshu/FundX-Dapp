@@ -12,7 +12,7 @@ Here's how it works:
 * Every donation, along with the user's wallet address, is immutably recorded on the blockchain, ensuring transparency and accountability.
 
 ## Website link
-https://fundraiserdapp.netlify.app/
+[https://fundraiserdapp.netlify.app/](https://fundx-dapp.netlify.app/)
 
 ## Screenshots
 ![image](https://github.com/git-init-priyanshu/FundRaiser-Dapp/assets/110045644/6cc718ac-e6ee-4bf0-b5d7-55b0ce7af016)
